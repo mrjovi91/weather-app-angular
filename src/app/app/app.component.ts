@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'weather-app-angular';
-  navbarOpened: boolean = false;
-
-  toggleNavBar(){
-    this.navbarOpened = !this.navbarOpened;
-  }
-
 }

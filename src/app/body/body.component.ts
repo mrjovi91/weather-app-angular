@@ -6,12 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  @Input()
-  navbarOpened: boolean;
+  navbarOpened: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleNavBar(){
+    this.navbarOpened = !this.navbarOpened;
   }
 
 
