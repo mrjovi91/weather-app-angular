@@ -1,0 +1,6 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Enter a city" aria-label="Enter a search term" aria-describedby="basic-addon2" [(ngModel)]="query" [value]="query">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" [disabled]="!query" (click)="search(query)">Search</button>
+    </div>
+</div>
